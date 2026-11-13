@@ -1,0 +1,82 @@
+:root {
+  --pf-v5-global--primary-color--100: #007d89;
+  --pf-v5-global--primary-color--200: #005f69;
+  --pf-v5-global--active-color--100: #007d89;
+  --pf-v5-global--link--Color: #00717d;
+  --pf-v5-global--link--Color--hover: #00535e;
+  --pf-v5-global--BackgroundColor--200: #f2f7fa;
+  --pf-v5-global--FontFamily--text: "Inter", "Noto Sans Khmer", Arial, sans-serif;
+  --pf-v5-global--FontFamily--heading: "Inter", "Noto Sans Khmer", Arial, sans-serif;
+}
+
+.pf-v5-c-masthead {
+  --pf-v5-c-masthead--BackgroundColor: #082d52;
+  background-color: #082d52;
+  border-bottom: 3px solid #00a9b6;
+}
+
+.pf-v5-c-masthead .pf-v5-c-toolbar {
+  --pf-v5-c-toolbar--BackgroundColor: transparent;
+}
+
+.pf-v5-c-masthead__brand img {
+  width: 190px;
+  max-width: 100%;
+  height: auto;
+  max-height: 52px;
+  object-fit: contain;
+}
+
+.pf-v5-c-page {
+  --pf-v5-c-page--BackgroundColor: #f2f7fa;
+}
+
+.pf-v5-c-page__sidebar {
+  --pf-v5-c-page__sidebar--BackgroundColor: #082d52;
+  background-color: #082d52;
+}
+
+.pf-v5-c-page__sidebar .pf-v5-c-nav {
+  --pf-v5-c-nav__link--Color: #e7f2f7;
+  --pf-v5-c-nav__link--hover--Color: #ffffff;
+  --pf-v5-c-nav__link--focus--Color: #ffffff;
+  --pf-v5-c-nav__link--m-current--Color: #ffffff;
+  --pf-v5-c-nav__link--hover--BackgroundColor: #123e61;
+  --pf-v5-c-nav__link--focus--BackgroundColor: #123e61;
+  --pf-v5-c-nav__link--m-current--BackgroundColor: #16486a;
+  --pf-v5-c-nav__link--m-current--after--BorderColor: #00a9b6;
+  --pf-v5-c-nav__link--after--BorderColor: #00a9b6;
+  --pf-v5-c-nav__section-title--Color: #a9c9d7;
+}
+
+.pf-v5-c-page__sidebar .pf-v5-c-nav__link:focus-visible {
+  outline: 2px solid #54d4dd;
+  outline-offset: -3px;
+}
+
+.pf-v5-c-card {
+  border-radius: 12px;
+}
+
+.keycloak__loading-container {
+  background-color: #f2f7fa;
+  color: #082d52;
+}
+
+.keycloak__loading-container .pf-v5-c-spinner {
+  --pf-v5-c-spinner--Color: #007d89;
+}
+
+@media (prefers-color-scheme: dark) {
+  .keycloak__loading-container {
+    background-color: #f2f7fa;
+    color: #082d52;
+  }
+}
+
+@media (max-width: 575px) {
+  .pf-v5-c-masthead__brand img {
+    width: 145px;
+    max-height: 40px;
+  }
+}
