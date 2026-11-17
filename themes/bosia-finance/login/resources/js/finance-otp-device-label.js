@@ -1,11 +1,6 @@
 import qrcode from './vendor/qrcode-generator-2.0.4.js';
 
 const form = document.getElementById('kc-totp-settings-form');
-const deviceName = form?.querySelector('input#userLabel[name="userLabel"]');
-
-if (deviceName && deviceName.value.trim() === '') {
-    deviceName.value = 'Finance authenticator';
-}
 
 const account = document.getElementById('finance-otp-account');
 const steps = document.getElementById('kc-totp-settings');
